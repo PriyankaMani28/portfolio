@@ -428,6 +428,7 @@ footer p {
 }
 
 /* ------ TABLET SECTION ----- */
+
 @media (min-width: 601px) and (max-width: 1024px) {
     .width-80 {
         width: 100%;
@@ -507,7 +508,7 @@ footer p {
 
     /* mobile nav */
     nav {
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100vh;
         top: 0;

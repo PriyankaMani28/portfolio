@@ -6,6 +6,12 @@ const header = document.querySelector("header");
 
 mobileIcon.addEventListener("click", () => {
     header.classList.toggle("active");
+
+    if (header.classList.contains("active")) {
+        document.querySelector("body").style.overflow = "hidden";
+    } else {
+        document.querySelector("body").style.overflow = "visible";
+    }
 });
 
 // ----- Resume Section -----
