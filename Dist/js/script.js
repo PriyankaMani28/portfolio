@@ -3,6 +3,14 @@
 
 const mobileIcon = document.querySelector(".mobileIcon");
 const header = document.querySelector("header");
+const lists = document.querySelectorAll("ul li a")
+
+lists.forEach((list) => {
+    list.addEventListener("click", () => {
+        header.classList.remove("active");
+        document.querySelector("body").style.overflow = "visible";
+    })
+})
 
 mobileIcon.addEventListener("click", () => {
     header.classList.toggle("active");
